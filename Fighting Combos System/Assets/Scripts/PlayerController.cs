@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Moves.None != move) //if the move is none ignore the function
         {
-            if (ComboPriorty > CurrentComboPriorty) //if the new move is higher Priorty play it and ignore everything else
+            if (ComboPriorty >= CurrentComboPriorty) //if the new move is higher Priorty play it and ignore everything else
             {
                 CurrentComboPriorty = ComboPriorty; //Set the new Combo
                 ResetTriggers(); //Reset All Animation Triggers
